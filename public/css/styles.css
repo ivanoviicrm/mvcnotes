@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+}
+
+body, header, nav, main, section, article, aside, footer {
+    box-sizing: border-box;
+} 
+
+/* CABECERA */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MENU */
+nav {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(lightseagreen, darkslategray);
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+nav a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+}
+
+nav a:hover {
+    background-color:darkslategray;
+    color: cadetblue;
+}
+
+/* PRINCIPAL / MAIN */
+main {
+    width: 100%;
+    min-height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+main > section {
+    margin: 10px;
+    width: 90%;
+    min-height: 150px;
+    padding: 20px;
+}
+
+main > section span {
+    color: darkslategrey;
+    font-family: Consolas;
+}
+
+main > section a:nth-child(2) {
+    padding-left: 20px;
+}
+
+.green {
+    background-color: yellowgreen;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+form > p {
+    padding: 20px;
+}
+
+form textarea {
+    width: 100%;
+    height: 400px;
+}
+
+/* PIE */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid darkslategray;
+}
+
+footer span {
+    font-weight: bolder;
+}
